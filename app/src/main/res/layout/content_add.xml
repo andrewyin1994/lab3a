@@ -12,8 +12,68 @@
     tools:context="com.example.andrew.lab3add.Add"
     tools:showIn="@layout/activity_add">
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addbutton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/num1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/addbutton"
+        android:layout_toStartOf="@+id/addbutton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/num2"
+        android:layout_alignBottom="@+id/num1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/addbutton"
+        android:layout_toEndOf="@+id/addbutton" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:ems="10"
+        android:id="@+id/sum"
+        android:textSize="40sp"
+        android:layout_below="@+id/equals"
+        android:layout_toEndOf="@+id/num1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plus"
+        android:text="@string/plus"
+        android:textSize="40sp"
+        android:layout_alignTop="@+id/num2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/equals"
+        android:text="@string/equals"
+        android:textSize="40sp"
+        android:layout_below="@+id/num1"
+        android:layout_alignLeft="@+id/plus"
+        android:layout_alignStart="@+id/plus" />
+
 </RelativeLayout>

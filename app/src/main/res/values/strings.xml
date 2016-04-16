@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Lab3Add</string>
     <string name="action_settings">Settings</string>
+    <string name="plus">"+"</string>
+    <string name="equals">"="</string>
 </resources>

@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 public class Add extends AppCompatActivity {
 
@@ -48,5 +49,12 @@ public class Add extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+
+    public int sum(int a, int b) {
+        //returns the sum of received parameters
+        return a+b;
     }
 }
