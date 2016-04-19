@@ -11,23 +11,19 @@ import com.example.andrew.lab3add.R;
 /**
  * Created by Andrew on 4/16/2016.
  */
-public class Add_JUnit_test extends ActivityInstrumentationTestCase2{
+public class Add_JUnit_test extends ActivityInstrumentationTestCase2<Add>{
     Add addActivity;
 
     public Add_JUnit_test() {
         super(Add.class);
     }
-
     public void test_sum() {
         addActivity = (Add) getActivity();
 
-        EditText num1 = (EditText) addActivity.findViewById(R.id.num1);
-        EditText num2 = (EditText) addActivity.findViewById(R.id.num2);
+        int a = 1;
+        int b = 2;
 
-        int a = Integer.parseInt(num1.getText().toString());
-        int b = Integer.parseInt(num2.getText().toString());
-
-
+        assertEquals(a+b, addActivity.sum(a,b));
     }
 
 }
