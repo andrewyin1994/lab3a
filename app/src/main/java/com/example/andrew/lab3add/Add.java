@@ -85,6 +85,6 @@ public class Add extends AppCompatActivity {
 
     public int sum(int a, int b) {
         //returns the sum of received parameters
-        return a+b;
+        return a-b;
     }
 }
